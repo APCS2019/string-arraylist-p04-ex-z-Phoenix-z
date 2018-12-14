@@ -6,7 +6,7 @@
      *  The method gives prefernce to return the longer matches.
      */
     private StringPart findPart(String str){
-        if (str.length() >= 5){
+        if (str.length() > 5){
         int n = 5;
         }
         else{
