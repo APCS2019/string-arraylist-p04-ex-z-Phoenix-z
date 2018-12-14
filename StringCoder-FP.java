@@ -6,14 +6,20 @@
      *  The method gives prefernce to return the longer matches.
      */
     private StringPart findPart(String str){
+        if (str.length() >= 5){
+        int n = 5;
+        }
+        else{
         int n = str.length();
+        }
         int index = 0;
-        while (n != 0){
-            index = materPhrase.IndexOf(str.subtring(0,n));
+        while (n >= 1){
+            index = masterPhrase.IndexOf(str.subtring(0,n));
             if(index == -1){
             n --;
             }    
             else {
-            return new StringPart(index,n)
+            return new StringPart(index,n);
             }
+            return null;
         
