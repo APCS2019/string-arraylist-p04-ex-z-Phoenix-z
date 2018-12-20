@@ -21,5 +21,7 @@
             else {
             return new StringPart(index,n);
             }
+        }
             return null;
+    }
         
